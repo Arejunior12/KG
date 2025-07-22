@@ -180,6 +180,7 @@ body[data-theme="dark"] .map-container iframe {
         position: fixed;
         margin-bottom: 50px;
         top: 0;
+        font-size: small;
         right: 0; /* CHANGED: Anchors the menu to the right side */
         width: 190px; /* CHANGED: Sets a fixed width, not full screen */
         height: 50vh;
