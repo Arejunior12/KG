@@ -180,10 +180,9 @@ body[data-theme="dark"] .map-container iframe {
         position: fixed;
         margin-bottom: 50px;
         top: 0;
-        font-size: small;
         right: 0; /* CHANGED: Anchors the menu to the right side */
         width: 190px; /* CHANGED: Sets a fixed width, not full screen */
-        height: 50vh;
+        height: 30vh;
         background-color: #0f0f0f;
         display: flex;
         justify-content: center;
@@ -191,7 +190,7 @@ body[data-theme="dark"] .map-container iframe {
         text-transform: lowercase;
         transform: translateX(100%); /* This still correctly hides it off-screen to the right */
         transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
-        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.25); /* ADDED: Creates a nice shadow for depth */
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.55); /* ADDED: Creates a nice shadow for depth */
     }
 
     .nav.is-active {
