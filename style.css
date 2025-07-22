@@ -178,7 +178,6 @@ body[data-theme="dark"] .map-container iframe {
 
     .nav {
         position: fixed;
-        padding-top: 50px;
         top: 0;
         right: 0; /* CHANGED: Anchors the menu to the right side */
         width: 190px; /* CHANGED: Sets a fixed width, not full screen */
