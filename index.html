@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KG Foods and Events - Catering & Event Planning in Akure</title>
+    <meta name="description" content="KG Foods and Events offers delicious home-inspired meals, party platters, and full-service event planning in Akure. We bring taste, freshness, and unforgettable moments to life.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light"> <!-- Default theme is light -->
+
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <!-- USE YOUR LOGO IMAGE HERE -->
+                <img src="steamy.jpg" alt="KG Foods and Events Logo">
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-controls">
+                <!-- Light/Dark Theme Toggle -->
+                <div class="theme-switcher">
+                    <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+                    <label for="theme-toggle" class="theme-toggle-label">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <span class="ball"></span>
+                    </label>
+                </div>
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. UPDATED Hero Section -->
+        <section class="hero">
+            <div class="hero__bg-image"></div> <!-- Background image is now set in CSS -->
+            <div class="hero__3d-wrapper">
+                <div class="hero__layer--text">
+                    <h1>KG Foods & Events</h1>
+                    <p>Authentic Flavors, Unforgettable Moments.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. About Section -->
+        <section id="about" class="about section-padding">
+            <div class="container">
+                <div class="about__content animate-on-scroll">
+                    <h2 class="section-title">Proudly Local, Made with Love</h2>
+                    <p>KG Foods and Events is dedicated to serving delicious, home-inspired meals made with love, quality ingredients, and authentic flavors. We turn your vision into reality with flawless planning and unforgettable execution.</p>
+                    <div class="slogans">
+                        <div class="slogan-item">
+                            <i class="fas fa-utensils"></i>
+                            <p>"Your taste buds deserve the best. We deliver nothing less."</p>
+                        </div>
+                        <div class="slogan-item">
+                            <i class="fas fa-magic-wand-sparkles"></i>
+                            <p>"You dream it. We bring it to life."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 3. Marquee Section -->
+        <section class="marquee">
+            <div class="marquee__inner">
+                <span>Catering <i class="fas fa-star"></i></span>
+                <span>Event Planning <i class="fas fa-star"></i></span>
+                <span>Daily Meals <i class="fas fa-star"></i></span>
+                <span>Party Platters <i class="fas fa-star"></i></span>
+                <span>Weddings <i class="fas fa-star"></i></span>
+                <span>Corporate Events <i class="fas fa-star"></i></span>
+            </div>
+        </section>
+
+        <!-- 4. UPDATED Gallery Section -->
+        <section id="gallery" class="gallery section-padding">
+            <div class="container">
+                <!-- Food Gallery (New Grid Style) -->
+                <div class="gallery-block animate-on-scroll">
+                    <h3 class="gallery-title">Our Delicious Foods</h3>
+                    <div class="food-gallery">
+                        <!-- REPLACE THESE IMAGES -->
+                        <div class="gallery-item item-1"><img src="https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&fit=crop&q=80&w=800" alt="Jollof Rice"></div>
+                        <div class="gallery-item item-2"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=800" alt="Pizza"></div>
+                        <div class="gallery-item item-3"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800" alt="Fresh Salad"></div>
+                        <div class="gallery-item item-4"><img src="https://images.unsplash.com/photo-1625944230942-905dc619245b?auto=format&fit=crop&q=80&w=800" alt="Small Chops"></div>
+                        <div class="gallery-item item-5"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=800" alt="Grilled Chicken"></div>
+                        <div class="gallery-item item-6"><img src="https://images.unsplash.com/photo-1604382354936-07c5d9983d34?auto=format&fit=crop&q=80&w=800" alt="Party Platter"></div>
+                    </div>
+                </div>
+
+                <!-- Event Carousel (Expanded) -->
+                <div class="gallery-block animate-on-scroll">
+                    <h3 class="gallery-title">Unforgettable Events</h3>
+                    <div class="carousel-container">
+                        <div class="carousel event-carousel">
+                             <!-- REPLACE THESE IMAGES -->
+                            <div class="carousel__item"><img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&q=80&w=1200" alt="Wedding Reception"></div>
+                            <div class="carousel__item"><img src="https://images.unsplash.com/photo-1511795409834-ef04bbd51725?auto=format&fit=crop&q=80&w=1200" alt="Birthday Party"></div>
+                            <div class="carousel__item"><img src="https://images.unsplash.com/photo-1542621334-a254cf477633?auto=format&fit=crop&q=80&w=1200" alt="Corporate Event"></div>
+                            <div class="carousel__item"><img src="https://images.unsplash.com/photo-1505273339324-26735a228f54?auto=format&fit=crop&q=80&w=1200" alt="Intimate Gathering"></div>
+                            <div class="carousel__item"><img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&q=80&w=1200" alt="Outdoor Celebration"></div>
+                            <div class="carousel__item"><img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=1200" alt="Elegant Table Setting"></div>
+                        </div>
+                        <button class="carousel__button carousel__button--left event-prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel__button carousel__button--right event-next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. UPDATED Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="container animate-on-scroll">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-subtitle">Ready to create something amazing? Let's talk!</p>
+                
+                <div class="contact-buttons">
+                    <a href="tel:08130476479" class="cta-button"><i class="fas fa-phone"></i> Call Us</a>
+                    <a href="https://wa.me/2348130476479" target="_blank" class="cta-button whatsapp-btn"><i class="fab fa-whatsapp"></i> Message on WhatsApp</a>
+                </div>
+
+                <form action="#" method="POST" class="contact-form"> <!-- PASTE YOUR FORMSPREE URL HERE -->
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Your Phone Number">
+                    </div>
+                    <textarea name="message" rows="6" placeholder="Tell us about your event or food order..." required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Ado road, Akure</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__socials">
+                <a href="https://facebook.com/KGFoods" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/-kgfoods" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://tiktok.com/@kgfoods" target="_blank" aria-label="Tiktok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://threads.net/@-kgfoods" target="_blank" aria-label="Threads"><i class="fab fa-threads"></i></a>
+            </div>
+            <p>© 2023 KG Foods and Events. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
