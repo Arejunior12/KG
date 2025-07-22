@@ -9,7 +9,8 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- ADDED Lora font for body text, UPDATED Poppins for bolder nav -->
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@500&family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     
     <!-- Font Awesome (for icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -17,23 +18,23 @@
     <!-- Your Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body data-theme="light"> <!-- Default theme is light -->
+<body data-theme="light">
 
     <header class="header">
         <div class="container">
             <a href="#" class="logo">
-                <!-- USE YOUR LOGO IMAGE HERE -->
-                <img src="steamy.jpg" alt="KG Foods and Events Logo">
+                <img src="images/steamy.jpg" alt="KG Foods Logo Mark">
+                <span>KGfoods</span>
             </a>
+            
             <nav class="nav">
                 <ul>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#gallery">Our Food</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-controls">
-                <!-- Light/Dark Theme Toggle -->
                 <div class="theme-switcher">
                     <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
                     <label for="theme-toggle" class="theme-toggle-label">
@@ -52,87 +53,83 @@
     </header>
 
     <main>
-        <!-- 1. UPDATED Hero Section -->
+        <!-- Full-Screen Video Hero -->
         <section class="hero">
-            <div class="hero__bg-image"></div> <!-- Background image is now set in CSS -->
-            <div class="hero__3d-wrapper">
-                <div class="hero__layer--text">
-                    <h1>KG Foods & Events</h1>
-                    <p>Authentic Flavors, Unforgettable Moments.</p>
-                </div>
+            <video src="video/bg_vid.mp4" autoplay loop muted playsinline class="hero-video"></video>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>KG Foods & Events</h1>
+                <p>Authentic Flavors, Unforgettable Moments.</p>
             </div>
         </section>
 
-        <!-- 2. About Section -->
+        <!-- About Section -->
         <section id="about" class="about section-padding">
             <div class="container">
                 <div class="about__content animate-on-scroll">
                     <h2 class="section-title">Proudly Local, Made with Love</h2>
-                    <p>KG Foods and Events is dedicated to serving delicious, home-inspired meals made with love, quality ingredients, and authentic flavors. We turn your vision into reality with flawless planning and unforgettable execution.</p>
+                    <!-- ADDED a class for easier styling -->
+                    <p class="about-description">KG Foods and Events is a proudly local food brand dedicated to serving delicious, home-inspired meals made with love, quality ingredients, and authentic flavors. Whether it's daily meals, party platters, or customized orders, we bring taste, freshness, and satisfaction to every plate.</p>
                     <div class="slogans">
                         <div class="slogan-item">
                             <i class="fas fa-utensils"></i>
                             <p>"Your taste buds deserve the best. We deliver nothing less."</p>
                         </div>
                         <div class="slogan-item">
-                            <i class="fas fa-magic-wand-sparkles"></i>
-                            <p>"You dream it. We bring it to life."</p>
+                            <i class="fas fa-star-of-life"></i>
+                            <p>"Creative touch, attention to detail, and passion for perfection."</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         
-        <!-- 3. Marquee Section -->
+        <!-- Marquee Section -->
         <section class="marquee">
             <div class="marquee__inner">
-                <span>Catering <i class="fas fa-star"></i></span>
-                <span>Event Planning <i class="fas fa-star"></i></span>
-                <span>Daily Meals <i class="fas fa-star"></i></span>
-                <span>Party Platters <i class="fas fa-star"></i></span>
-                <span>Weddings <i class="fas fa-star"></i></span>
-                <span>Corporate Events <i class="fas fa-star"></i></span>
+                <span>Catering <i class="fas fa-star"></i></span><span>Event Planning <i class="fas fa-star"></i></span><span>Daily Meals <i class="fas fa-star"></i></span><span>Party Platters <i class="fas fa-star"></i></span><span>Weddings <i class="fas fa-star"></i></span><span>Corporate Events <i class="fas fa-star"></i></span>
+                <span>Catering <i class="fas fa-star"></i></span><span>Event Planning <i class="fas fa-star"></i></span><span>Daily Meals <i class="fas fa-star"></i></span><span>Party Platters <i class="fas fa-star"></i></span><span>Weddings <i class="fas fa-star"></i></span><span>Corporate Events <i class="fas fa-star"></i></span>
             </div>
         </section>
 
-        <!-- 4. UPDATED Gallery Section -->
+        <!-- Gallery Section -->
         <section id="gallery" class="gallery section-padding">
             <div class="container">
-                <!-- Food Gallery (New Grid Style) -->
-                <div class="gallery-block animate-on-scroll">
-                    <h3 class="gallery-title">Our Delicious Foods</h3>
-                    <div class="food-gallery">
-                        <!-- REPLACE THESE IMAGES -->
-                        <div class="gallery-item item-1"><img src="https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&fit=crop&q=80&w=800" alt="Jollof Rice"></div>
-                        <div class="gallery-item item-2"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=800" alt="Pizza"></div>
-                        <div class="gallery-item item-3"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800" alt="Fresh Salad"></div>
-                        <div class="gallery-item item-4"><img src="https://images.unsplash.com/photo-1625944230942-905dc619245b?auto=format&fit=crop&q=80&w=800" alt="Small Chops"></div>
-                        <div class="gallery-item item-5"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=800" alt="Grilled Chicken"></div>
-                        <div class="gallery-item item-6"><img src="https://images.unsplash.com/photo-1604382354936-07c5d9983d34?auto=format&fit=crop&q=80&w=800" alt="Party Platter"></div>
+                <h2 class="section-title animate-on-scroll">Our Delicious Foods</h2>
+                
+                <div class="food-category animate-on-scroll">
+                    <h3>Nigerian Classics</h3>
+                    <div class="food-grid">
+                        <div class="food-card"><img src="images/Jollof.jpg" alt="Jollof Rice"><div class="food-card__caption">Jollof Rice</div></div>
+                        <div class="food-card"><img src="images/Pounded yam.jpg" alt="Pounded Yam & Egusi"><div class="food-card__caption">Pounded Yam & Egusi</div></div>
+                        <div class="food-card"><img src="images/fried rice.jpg" alt="Fried Rice"><div class="food-card__caption">Fried Rice</div></div>
+                        <div class="food-card"><img src="images/amala.jpg" alt="Amala and Ewedu"><div class="food-card__caption">Amala & Ewedu</div></div>
                     </div>
                 </div>
 
-                <!-- Event Carousel (Expanded) -->
-                <div class="gallery-block animate-on-scroll">
-                    <h3 class="gallery-title">Unforgettable Events</h3>
-                    <div class="carousel-container">
-                        <div class="carousel event-carousel">
-                             <!-- REPLACE THESE IMAGES -->
-                            <div class="carousel__item"><img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&q=80&w=1200" alt="Wedding Reception"></div>
-                            <div class="carousel__item"><img src="https://images.unsplash.com/photo-1511795409834-ef04bbd51725?auto=format&fit=crop&q=80&w=1200" alt="Birthday Party"></div>
-                            <div class="carousel__item"><img src="https://images.unsplash.com/photo-1542621334-a254cf477633?auto=format&fit=crop&q=80&w=1200" alt="Corporate Event"></div>
-                            <div class="carousel__item"><img src="https://images.unsplash.com/photo-1505273339324-26735a228f54?auto=format&fit=crop&q=80&w=1200" alt="Intimate Gathering"></div>
-                            <div class="carousel__item"><img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&q=80&w=1200" alt="Outdoor Celebration"></div>
-                            <div class="carousel__item"><img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=1200" alt="Elegant Table Setting"></div>
-                        </div>
-                        <button class="carousel__button carousel__button--left event-prev"><i class="fas fa-chevron-left"></i></button>
-                        <button class="carousel__button carousel__button--right event-next"><i class="fas fa-chevron-right"></i></button>
+                <div class="food-category animate-on-scroll">
+                    <h3>Intercontinental Delights</h3>
+                    <div class="food-grid">
+                        <div class="food-card"><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&q=80&w=600" alt="Creamy Pasta"><div class="food-card__caption">Creamy Pasta</div></div>
+                        <div class="food-card"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=600" alt="Gourmet Burger"><div class="food-card__caption">Gourmet Burger</div></div>
+                        <div class="food-card"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=600" alt="Fresh Garden Salad"><div class="food-card__caption">Fresh Garden Salad</div></div>
+                        <div class="food-card"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=600" alt="Pizza"><div class="food-card__caption">Custom Pizza</div></div>
+                    </div>
+                </div>
+
+                <div class="food-category animate-on-scroll">
+                    <h3>Grills & Assorted Platters</h3>
+                    <div class="food-grid">
+                        <div class="food-card"><img src="images/fried rice.jpg" alt="Grilled Fish"><div class="food-card__caption">Grilled Tilapia</div></div>
+                        <div class="food-card"><img src="images/asun.jpg" alt="Asun"><div class="food-card__caption">Asun (Spicy Goat Meat)</div></div>
+                        <div class="food-card"><img src="images/small chops.jpg" alt="Small Chops"><div class="food-card__caption">Small Chops Platter</div></div>
+                        <div class="food-card"><img src="images/peppered snail.jpg" alt="Peppered Snail"><div class="food-card__caption">Peppered Snail</div></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 6. UPDATED Contact Section -->
+        <!-- Contact Section -->
         <section id="contact" class="contact section-padding">
             <div class="container animate-on-scroll">
                 <h2 class="section-title">Get In Touch</h2>
@@ -143,7 +140,7 @@
                     <a href="https://wa.me/2348130476479" target="_blank" class="cta-button whatsapp-btn"><i class="fab fa-whatsapp"></i> Message on WhatsApp</a>
                 </div>
 
-                <form action="#" method="POST" class="contact-form"> <!-- PASTE YOUR FORMSPREE URL HERE -->
+                <form action="#" method="POST" class="contact-form">
                     <div class="form-group">
                         <input type="text" name="name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
@@ -155,8 +152,10 @@
                     <button type="submit" class="submit-btn">Send Message</button>
                 </form>
 
-                <div class="contact-info">
-                    <p><i class="fas fa-map-marker-alt"></i> Ado road, Akure</p>
+                <!-- NEW Google Map Container -->
+                <div class="map-container">
+                    <!-- PASTE YOUR GOOGLE MAPS IFRAME CODE HERE -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.605514933971!2d5.220636674364207!3d7.285644513839009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10478e2c642b1045%3A0xd76127a57f3c2803!2sAkure-Ado%20Ekiti%20Rd%2C%20Akure%20340284%2C%20Ondo!5e0!3m2!1sen!2sng!4v1753182037822!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
