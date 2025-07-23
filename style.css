@@ -192,7 +192,7 @@ body[data-theme="dark"] .map-container iframe {
     /* --- The CORRECTED .nav Rule --- */
     .nav {
         position: fixed;
-        top: 0;
+        top: 50%;
         right: 0;
         width: 120px;
         height: 50vh;
@@ -203,13 +203,14 @@ body[data-theme="dark"] .map-container iframe {
         border-radius: 5px;
         justify-content: center;
         align-items: center;
-        transform: translateX(100%);
+        transform: translateY(-50%) translateX(100%);
+        
         transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
         box-shadow: -5px 0 20px rgba(0, 0, 0, 0.55);
-    }
+        }
 
     .nav.is-active {
-        transform: translateX(0); /* This still correctly slides it into view */
+        transform: translateY(-50%) translateX(0); /* This still correctly slides it into view */
     }
     .nav ul { flex-direction: column; text-align: center; }
     .nav ul li { margin: 20px 0;}
