@@ -189,22 +189,23 @@ body[data-theme="dark"] .map-container iframe {
 
     /* --- Replace with This Block (NEW Code) --- */
 
+    /* --- The CORRECTED .nav Rule --- */
     .nav {
         position: fixed;
         top: 0;
-        right: 0; /* CHANGED: Anchors the menu to the right side */
-        width: 120px; /* CHANGED: Sets a fixed width, not full screen */
+        right: 0;
+        width: 120px;
         height: 50vh;
-        padding: 40px 20px;
+        /* The padding line has been removed */
         background-color: #080808;
         display: flex;
         border: solid 1px;
         border-radius: 5px;
         justify-content: center;
         align-items: center;
-        transform: translateX(100%); /* This still correctly hides it off-screen to the right */
+        transform: translateX(100%);
         transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
-        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.55); /* ADDED: Creates a nice shadow for depth */
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.55);
     }
 
     .nav.is-active {
