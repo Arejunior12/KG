@@ -193,7 +193,7 @@ body[data-theme="dark"] .map-container iframe {
         position: fixed;
         top: 0;
         right: 0; /* CHANGED: Anchors the menu to the right side */
-        width: 150px; /* CHANGED: Sets a fixed width, not full screen */
+        width: 170px; /* CHANGED: Sets a fixed width, not full screen */
         height: 50vh;
         background-color: #0f0f0f;
         display: flex;
