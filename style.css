@@ -201,7 +201,7 @@ body[data-theme="dark"] .map-container iframe {
         border: solid 1px;
         border-radius: 5px;
         justify-content: center;
-        align-items: left;
+        align-items: center;
         transform: translateX(100%); /* This still correctly hides it off-screen to the right */
         transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
         box-shadow: -5px 0 20px rgba(0, 0, 0, 0.55); /* ADDED: Creates a nice shadow for depth */
