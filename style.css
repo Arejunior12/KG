@@ -191,10 +191,9 @@ body[data-theme="dark"] .map-container iframe {
 
     .nav {
         position: fixed;
-        padding-top: 50px;
         top: 0;
         right: 0; /* CHANGED: Anchors the menu to the right side */
-        width: 190px; /* CHANGED: Sets a fixed width, not full screen */
+        width: 150px; /* CHANGED: Sets a fixed width, not full screen */
         height: 50vh;
         background-color: #0f0f0f;
         display: flex;
@@ -209,7 +208,7 @@ body[data-theme="dark"] .map-container iframe {
         transform: translateX(0); /* This still correctly slides it into view */
     }
     .nav ul { flex-direction: column; text-align: center; }
-    .nav ul li { margin: 20px 0; }
+    .nav ul li { margin: 20px 0; margin-top: 50px;}
     .nav a { font-size: 1.5rem; text-transform: lowercase; letter-spacing: 1px;}
     .hamburger { display: block; }
     .hamburger.is-active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
