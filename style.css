@@ -197,6 +197,8 @@ body[data-theme="dark"] .map-container iframe {
         height: 50vh;
         background-color: #080808;
         display: flex;
+        border: solid 1px;
+        border-radius: 5px;
         justify-content: center;
         align-items: left;
         transform: translateX(100%); /* This still correctly hides it off-screen to the right */
