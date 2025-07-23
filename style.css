@@ -196,7 +196,7 @@ body[data-theme="dark"] .map-container iframe {
         right: 0;
         width: 120px;
         height: 50vh;
-        /* The padding line has been removed */
+        padding: 40px 20px;
         background-color: #080808;
         display: flex;
         border: solid 1px;
