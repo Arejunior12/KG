@@ -42,12 +42,14 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('is-active');
         nav.classList.toggle('is-active');
+        document.body.classList.toggle('overlay-active'); 
     });
 
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
              hamburger.classList.remove('is-active');
              nav.classList.remove('is-active');
+             document.body.classList.remove('overlay-active');
         });
     });
 

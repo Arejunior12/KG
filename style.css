@@ -35,6 +35,19 @@ body[data-theme="light"] {
     --section-bg: #f7f1e9;
     --border-color: #ccc;
 }
+/* ADD THIS to your style.css */
+body.overlay-active::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999; /* Just below the header's z-index */
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
 
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -186,7 +199,6 @@ body[data-theme="dark"] .map-container iframe {
         display: flex;
         justify-content: center;
         align-items: left;
-        text-transform: lowercase;
         transform: translateX(100%); /* This still correctly hides it off-screen to the right */
         transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
         box-shadow: -5px 0 20px rgba(0, 0, 0, 0.55); /* ADDED: Creates a nice shadow for depth */
@@ -197,7 +209,7 @@ body[data-theme="dark"] .map-container iframe {
     }
     .nav ul { flex-direction: column; text-align: center; }
     .nav ul li { margin: 20px 0; }
-    .nav a { font-size: 2rem; }
+    .nav a { font-size: 1.5rem; text-transform: lowercase; letter-spacing: 1px;}
     .hamburger { display: block; }
     .hamburger.is-active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
     .hamburger.is-active span:nth-child(2) { opacity: 0; }
