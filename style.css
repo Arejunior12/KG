@@ -67,7 +67,7 @@ html { scroll-behavior: smooth; }
 .logo span {
     font-family: var(--logo-font);
     font-size: 2.8rem;
-    color: rgb(65, 27, 27); /* CORRECTED to use theme variable */
+    color: rgb(214, 69, 69); /* CORRECTED to use theme variable */
     font-weight: 500;
     line-height: 1;
 }
